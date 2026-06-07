@@ -1,0 +1,20 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Node
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
