@@ -12,4 +12,4 @@ def analyze(payload: CodeAnalysisRequest):
 
     result = analyze_code(payload.code, payload.language)
 
-    return {"result": result}
+    return result

@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from services.openai_service import test_openai
 from services.review_service import review_code
@@ -8,6 +9,16 @@ from routes.analyze_route import router as analyze_router
 
 # Create FastAPI app first
 app = FastAPI(title="AI Code Review Agent", version="1.0.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Register routes
 app.include_router(analyze_router)
