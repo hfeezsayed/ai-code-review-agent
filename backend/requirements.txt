@@ -1,10 +1,9 @@
-fastapi==0.115.12
-uvicorn[standard]==0.34.3
-python-dotenv==1.1.0
+fastapi
+uvicorn[standard]
+python-dotenv
 
-openai==1.86.0
-langchain==0.3.25
-langchain-openai==0.3.21
+openai
+langchain
+langchain-openai
 
-crewai==0.130.0
-crewai-tools==0.47.1
+crewai==1.14.6
